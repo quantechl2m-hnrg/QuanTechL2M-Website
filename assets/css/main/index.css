@@ -32,8 +32,9 @@
 
 
 .hero-img {
-  max-width: 150%; /* Set max-width to 100% for responsiveness */
-  height: auto;
+  width: 180px; /* fixed uniform width */
+  height: 180px; /* fixed uniform height */
+  object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -42,6 +43,13 @@
   transform: scale(1.15);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
+
+/* align and space hero links consistently */
+.hero-links-wrapper .hero-link {
+  margin: 0 15px;
+  display: inline-block;
+}
+
 
 .hero h2 {
   color: rgba(255, 255, 255, 0.8); /* Adjust subtitle color */
